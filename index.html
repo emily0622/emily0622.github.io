@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emily Traynor — Software Engineer</title>
+  <meta name="description" content="Emily Traynor is a software engineer in Vancouver building cloud-native backends and AI agent systems — Python, FastAPI, AWS, Pulumi, and the modern AI stack (MCP, multi-agent orchestration)." />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo" aria-label="Emily Traynor — home">
+        Emily&nbsp;Traynor<span class="nav__logo-dot">.</span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#approach">Approach</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav__cta">Let's connect</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__grid">
+        <div class="hero__text">
+          <div class="hero__availability reveal">
+            <span class="pulse"></span> Software Engineer II · Warner Music Group · Vancouver, BC
+          </div>
+          <h1 class="hero__title">
+            <span class="reveal" style="--d:1">Engineering reliable</span>
+            <span class="reveal" style="--d:2">systems — and the</span>
+            <span class="reveal hero__accent" style="--d:3">AI agents on top.</span>
+          </h1>
+          <div class="hero__meta reveal" style="--d:4">
+            <p class="hero__lede">
+              Software engineer with a machine-intelligence background, building cloud-native
+              backends in production — and fluent in the modern AI stack: MCP, multi-agent
+              orchestration, and LLM tooling.
+            </p>
+            <a href="#work" class="btn btn--primary">View selected work <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+
+        <!-- Code card -->
+        <div class="hero__code reveal" style="--d:3" aria-hidden="true">
+          <div class="hero__code-bar">
+            <span></span><span></span><span></span>
+            <em>orchestrator.py</em>
+          </div>
+          <pre><code><span class="c-k">from</span> mcp <span class="c-k">import</span> ClientSession
+<span class="c-k">from</span> agents <span class="c-k">import</span> Orchestrator, Agent
+
+orchestrator = Orchestrator(
+    model=<span class="c-s">"claude-opus-4-8"</span>,
+    tools=<span class="c-f">mcp</span>.discover(),
+)
+
+<span class="c-c"># fan out, verify, synthesize</span>
+result = <span class="c-k">await</span> orchestrator.run(
+    task=<span class="c-s">"ship it"</span>,
+    agents=[<span class="c-f">researcher</span>, <span class="c-f">builder</span>, <span class="c-f">critic</span>],
+)</code></pre>
+        </div>
+      </div>
+
+      <div class="hero__scroll reveal" style="--d:5" aria-hidden="true">
+        <span>Scroll</span>
+        <span class="hero__scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Python</span><span class="dot">✺</span>
+        <span>FastAPI</span><span class="dot">✺</span>
+        <span>AWS &amp; Pulumi</span><span class="dot">✺</span>
+        <span>Model Context Protocol</span><span class="dot">✺</span>
+        <span>Multi-Agent Orchestration</span><span class="dot">✺</span>
+        <span>PyTorch</span><span class="dot">✺</span>
+        <span>Python</span><span class="dot">✺</span>
+        <span>FastAPI</span><span class="dot">✺</span>
+        <span>AWS &amp; Pulumi</span><span class="dot">✺</span>
+        <span>Model Context Protocol</span><span class="dot">✺</span>
+        <span>Multi-Agent Orchestration</span><span class="dot">✺</span>
+        <span>PyTorch</span><span class="dot">✺</span>
+      </div>
+    </div>
+
+    <!-- Intro statement -->
+    <section class="intro reveal" id="intro">
+      <p class="eyebrow">Hello, I'm Emily</p>
+      <p class="intro__statement">
+        I build <em>reliable</em> software — production APIs, cloud infrastructure, and data
+        systems — and I'm <em>all-in</em> on the AI shift, shipping agentic tooling with the
+        Model Context Protocol and multi-agent orchestration.
+      </p>
+    </section>
+
+    <!-- Selected Work -->
+    <section class="work" id="work">
+      <div class="section-head">
+        <p class="eyebrow">Selected Work</p>
+        <h2 class="section-title">Projects &amp; contributions</h2>
+      </div>
+
+      <div class="work__filters" id="workFilters" role="tablist" aria-label="Filter projects">
+        <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter" data-filter="open-source" role="tab" aria-selected="false">Open Source</button>
+        <button class="filter" data-filter="backend-cloud" role="tab" aria-selected="false">Backend &amp; Cloud</button>
+        <button class="filter" data-filter="ai-ml" role="tab" aria-selected="false">AI &amp; ML</button>
+      </div>
+
+      <div class="work__grid" id="workGrid">
+        <article class="card reveal" data-cat="open-source" data-project="compute-engine" tabindex="0" role="button" aria-label="Open case study: compute-engine contribution">
+          <div class="card__media" data-thumb="oss"><span class="card__index">01</span></div>
+          <div class="card__body">
+            <div class="card__tags"><span>Open Source</span><span>457★</span></div>
+            <h3 class="card__title">compute-engine — Summations</h3>
+            <p class="card__desc">Merged a 600+ line contribution to cortex-js/compute-engine — the symbolic-math engine behind MathLive — extending summation &amp; product parsing.</p>
+            <span class="card__open">View case study →</span>
+          </div>
+        </article>
+
+        <article class="card reveal" data-cat="backend-cloud" data-project="video-platform" tabindex="0" role="button" aria-label="Open case study: Video Management Platform">
+          <div class="card__media" data-thumb="cloud"><span class="card__index">02</span></div>
+          <div class="card__body">
+            <div class="card__tags"><span>Cloud Infra</span><span>FastAPI</span></div>
+            <h3 class="card__title">Video Management Platform</h3>
+            <p class="card__desc">Architected greenfield cloud infrastructure (Pulumi + AWS) and 20+ FastAPI endpoints for a video-claiming platform at Warner Music Group.</p>
+            <span class="card__open">View case study →</span>
+          </div>
+        </article>
+
+        <article class="card reveal" data-cat="ai-ml" data-project="nlp-thesis" tabindex="0" role="button" aria-label="Open case study: NLP content moderation thesis">
+          <div class="card__media" data-thumb="ml"><span class="card__index">03</span></div>
+          <div class="card__body">
+            <div class="card__tags"><span>NLP</span><span>Thesis</span></div>
+            <h3 class="card__title">Decentralized Content Moderation</h3>
+            <p class="card__desc">Undergraduate thesis fine-tuning BERT classifiers with Naive Bayes &amp; topic modeling for sentiment, stigma, and topic classification.</p>
+            <span class="card__open">View case study →</span>
+          </div>
+        </article>
+
+        <article class="card reveal" data-cat="ai-ml" data-project="agentic" tabindex="0" role="button" aria-label="Open case study: agentic AI and MCP">
+          <div class="card__media" data-thumb="ai"><span class="card__index">04</span></div>
+          <div class="card__body">
+            <div class="card__tags"><span>Agents</span><span>MCP</span></div>
+            <h3 class="card__title">Agentic AI &amp; MCP Tooling</h3>
+            <p class="card__desc">Current focus: building with the Model Context Protocol and multi-agent orchestration — turning LLMs into reliable, tool-using systems.</p>
+            <span class="card__open">View case study →</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Approach / What I do -->
+    <section class="approach" id="approach">
+      <div class="section-head">
+        <p class="eyebrow">What I Do</p>
+        <h2 class="section-title">Three ways I work</h2>
+      </div>
+      <div class="approach__grid">
+        <div class="approach__col reveal">
+          <span class="approach__num">01</span>
+          <h3>Backend &amp; APIs</h3>
+          <p>Production Python services that hold up under load — clean REST design, microservice integration, and the reliability work that keeps them fast.</p>
+          <ul>
+            <li>FastAPI, SQLAlchemy, Pydantic, Celery</li>
+            <li>REST API design &amp; integration</li>
+            <li>Caching, pooling, indexing, TTL jobs</li>
+          </ul>
+        </div>
+        <div class="approach__col reveal" style="--d:1">
+          <span class="approach__num">02</span>
+          <h3>Cloud &amp; Infrastructure</h3>
+          <p>Infrastructure as code and the pipelines around it — I set the Pulumi pattern other teams now follow at Warner Music Group.</p>
+          <ul>
+            <li>Pulumi · AWS (RDS, ECS, Load Balancers)</li>
+            <li>CI/CD with GitHub Actions, Docker</li>
+            <li>Observability &amp; alerting (New Relic)</li>
+          </ul>
+        </div>
+        <div class="approach__col reveal approach__col--feature" style="--d:2">
+          <span class="approach__num">03</span>
+          <h3>AI &amp; Agents</h3>
+          <p>Where I'm investing now: bringing the modern AI stack into real systems — agents that use tools, coordinate, and ship.</p>
+          <ul>
+            <li>Model Context Protocol (MCP)</li>
+            <li>Multi-agent orchestration &amp; LLM apps</li>
+            <li>ML foundations: PyTorch, TensorFlow, BERT</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats" id="stats">
+      <div class="stats__item reveal">
+        <span class="stats__num" data-count="20" data-suffix="+">0</span>
+        <span class="stats__label">Production REST endpoints</span>
+      </div>
+      <div class="stats__item reveal" style="--d:1">
+        <span class="stats__num" data-count="16">0</span>
+        <span class="stats__label">Months: promoted SWE I → II</span>
+      </div>
+      <div class="stats__item reveal" style="--d:2">
+        <span class="stats__num" data-count="600" data-suffix="+">0</span>
+        <span class="stats__label">Lines merged to open source</span>
+      </div>
+      <div class="stats__item reveal" style="--d:3">
+        <span class="stats__num" data-count="2023">0</span>
+        <span class="stats__label">UofT Machine Intelligence</span>
+      </div>
+    </section>
+
+    <!-- AI highlight band -->
+    <section class="quote reveal" id="highlight">
+      <blockquote>
+        <p>Fluent in the modern AI stack — the <span class="quote__hl">Model Context Protocol</span>, <span class="quote__hl">multi-agent orchestration</span>, and LLM application design — and shipping it into production-grade systems.</p>
+        <footer>
+          <cite>Current focus</cite>
+          <span>Where backend reliability meets agentic AI</span>
+        </footer>
+      </blockquote>
+    </section>
+
+    <!-- Experience -->
+    <section class="experience" id="experience">
+      <div class="section-head">
+        <p class="eyebrow">Experience</p>
+        <h2 class="section-title">Where I've worked</h2>
+      </div>
+      <ol class="timeline">
+        <li class="timeline__item reveal">
+          <div class="timeline__when">2024 — Present</div>
+          <div class="timeline__what">
+            <h3>Software Engineer II (L3)</h3>
+            <p class="timeline__org">Warner Music Group · Vancouver, BC</p>
+            <p>Promoted from SWE I within 16 months. Architected the greenfield cloud platform (Pulumi/AWS) for Video Management, shipped 20+ FastAPI endpoints, drove reliability (JWT caching, connection pooling, query indexing), and stood up monitoring with New Relic + GitHub Actions.</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__when">2022</div>
+          <div class="timeline__what">
+            <h3>SDE Intern</h3>
+            <p class="timeline__org">Amazon (AWS) · Vancouver, BC</p>
+            <p>Redesigned the S3 Replication Manifest Generator, writing production Java with Mockito and Step Functions (YAML/JSON).</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__when">2021 — 2022</div>
+          <div class="timeline__what">
+            <h3>WebMaster</h3>
+            <p class="timeline__org">Engineering Stores · Toronto, ON</p>
+            <p>Built and migrated a full-stack e-commerce site with the Shopify Admin API, Django, PostgreSQL, and DigitalOcean — handling both data migration and hosting.</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__when">2021</div>
+          <div class="timeline__what">
+            <h3>Technology Consultant Intern</h3>
+            <p class="timeline__org">EY (Ernst &amp; Young) · Toronto, ON</p>
+            <p>Led client development workshops and built custom features on commercial insurance software (Guidewire); drove process efficiency through data analysis and stakeholder presentations.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="about__content reveal">
+        <p class="eyebrow">About</p>
+        <h2 class="section-title">Building at the edge of AI</h2>
+        <p>I'm Emily Traynor — a software engineer based in Vancouver, BC, and a University of Toronto Engineering Science graduate specializing in Machine Intelligence. I work across the stack but I'm happiest deep in backend systems, cloud infrastructure, and now agentic AI.</p>
+        <p>At Warner Music Group I build and own production services end to end. Outside of work I follow the AI frontier closely — the Model Context Protocol, multi-agent orchestration, and LLM tooling — and bring what's new into systems that have to actually be reliable.</p>
+        <div class="about__cols">
+          <div>
+            <h4>Education</h4>
+            <p>B.Eng, Engineering Science — Machine Intelligence<br>University of Toronto · 2019–2023</p>
+          </div>
+          <div>
+            <h4>Languages &amp; Frameworks</h4>
+            <p>Python (FastAPI, SQLAlchemy, Pydantic, Celery), JavaScript, Java</p>
+          </div>
+          <div>
+            <h4>Infrastructure &amp; Data</h4>
+            <p>Pulumi · AWS · Docker · CI/CD · PostgreSQL · Redis · New Relic</p>
+          </div>
+          <div>
+            <h4>AI &amp; ML</h4>
+            <p>MCP · Multi-agent orchestration · PyTorch · TensorFlow · BERT · Pandas</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <p class="eyebrow eyebrow--light">Let's connect</p>
+      <h2 class="contact__title">Let's build something reliable.</h2>
+      <p class="contact__lede">Open to interesting problems in backend, infrastructure, and applied AI. Reach out — I'd love to hear what you're working on.</p>
+      <form class="contact__form" id="contactForm" novalidate>
+        <div class="field">
+          <input type="text" id="cName" name="name" required placeholder=" " />
+          <label for="cName">Your name</label>
+        </div>
+        <div class="field">
+          <input type="email" id="cEmail" name="email" required placeholder=" " />
+          <label for="cEmail">Email</label>
+        </div>
+        <div class="field field--full">
+          <textarea id="cMsg" name="message" rows="3" required placeholder=" "></textarea>
+          <label for="cMsg">What's on your mind?</label>
+        </div>
+        <button type="submit" class="btn btn--primary btn--block">Send message <span aria-hidden="true">→</span></button>
+        <p class="contact__status" id="contactStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">Emily Traynor<span class="nav__logo-dot">.</span></span>
+        <p>Software Engineer · Vancouver, BC</p>
+      </div>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a href="mailto:EJTraynor2001@gmail.com">Email ↗</a>
+        <a href="https://github.com/emily0622" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/emily-traynor-64ab391a3/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </nav>
+      <p class="footer__copy">© <span id="year">2026</span> Emily Traynor</p>
+    </div>
+    <a href="#top" class="footer__top" aria-label="Back to top">↑</a>
+  </footer>
+
+  <!-- Case study modal -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal__overlay" data-close></div>
+    <div class="modal__panel" role="document">
+      <button class="modal__close" data-close aria-label="Close">✕</button>
+      <div class="modal__media" id="modalMedia"></div>
+      <div class="modal__content">
+        <div class="modal__tags" id="modalTags"></div>
+        <h3 id="modalTitle"></h3>
+        <p class="modal__meta" id="modalMeta"></p>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
