@@ -606,6 +606,14 @@ img { max-width: 100%; display: block; }
 }
 .timeline__what li::before { content: "–"; position: absolute; left: 0; color: var(--clay); }
 
+/* Move the Projects section to the bottom of the page */
+#top { display: flex; flex-direction: column; }
+.work { order: 1; }
+
+/* Text-only project cards — no thumbnail/image area */
+.modal__media { display: none; }
+.card__body { padding-top: 1.9rem; }
+
 @media (max-width: 900px) {
   .hero__photo { order: -1; }
   .hero__photo img { max-width: 300px; }
