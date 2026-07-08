@@ -580,6 +580,32 @@ img { max-width: 100%; display: block; }
 /* External link button inside the case-study modal */
 .modal__link { margin-top: 1.5rem; }
 
+/* Stats — two metrics + a companies name-drop */
+.stats { display: block; text-align: center; }
+.stats__metrics {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: clamp(2rem, 8vw, 6rem);
+}
+.stats__metrics .stats__label { max-width: 22ch; margin-left: auto; margin-right: auto; }
+.stats__companies { margin-top: 3.5rem; padding-top: 2.5rem; border-top: 1px solid var(--line); }
+.stats__eyebrow {
+  display: block; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.2em;
+  color: var(--clay); margin-bottom: 1.3rem;
+}
+.stats__names { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.6rem 2.5rem; }
+.stats__names span {
+  font-family: var(--font-display); font-size: clamp(1.15rem, 2.5vw, 1.7rem);
+  color: var(--ink); letter-spacing: -0.01em;
+}
+
+/* Experience — resume-style bullets */
+.timeline__lead { font-weight: 600; color: var(--ink); margin: 0.3rem 0 0.8rem; font-size: 0.95rem; }
+.timeline__what ul { list-style: none; margin: 0.6rem 0 0; }
+.timeline__what li {
+  position: relative; padding-left: 1.3rem; margin-bottom: 0.6rem;
+  color: var(--ink-soft); font-size: 0.95rem; line-height: 1.55;
+}
+.timeline__what li::before { content: "–"; position: absolute; left: 0; color: var(--clay); }
+
 @media (max-width: 900px) {
   .hero__photo { order: -1; }
   .hero__photo img { max-width: 300px; }

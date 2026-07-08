@@ -24,10 +24,10 @@
       </a>
       <nav class="nav__links" id="navLinks" aria-label="Primary">
         <a href="#work">Work</a>
-        <a href="#approach">Approach</a>
+        <a href="#approach">Expertise</a>
         <a href="#experience">Experience</a>
         <a href="#about">About</a>
-        <a href="#contact" class="nav__cta">Let's connect</a>
+        <a href="mailto:EJTraynor2001@gmail.com" class="nav__cta">Get in touch</a>
       </nav>
       <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -157,8 +157,8 @@
     <!-- Approach / What I do -->
     <section class="approach" id="approach">
       <div class="section-head">
-        <p class="eyebrow">What I Do</p>
-        <h2 class="section-title">Three ways I work</h2>
+        <p class="eyebrow">Expertise</p>
+        <h2 class="section-title">Areas of expertise</h2>
       </div>
       <div class="approach__grid">
         <div class="approach__col reveal">
@@ -196,33 +196,25 @@
 
     <!-- Stats -->
     <section class="stats" id="stats">
-      <div class="stats__item reveal">
-        <span class="stats__num" data-count="20" data-suffix="+">0</span>
-        <span class="stats__label">Production REST endpoints</span>
+      <div class="stats__metrics">
+        <div class="stats__item reveal">
+          <span class="stats__num" data-count="16">0</span>
+          <span class="stats__label">Months: promoted Software Engineer I → II</span>
+        </div>
+        <div class="stats__item reveal" style="--d:1">
+          <span class="stats__num" data-count="2023">0</span>
+          <span class="stats__label">University of Toronto Engineering Science, Machine Intelligence Specialization</span>
+        </div>
       </div>
-      <div class="stats__item reveal" style="--d:1">
-        <span class="stats__num" data-count="16">0</span>
-        <span class="stats__label">Months: promoted SWE I → II</span>
+      <div class="stats__companies reveal" style="--d:2">
+        <span class="stats__eyebrow">Experience at</span>
+        <div class="stats__names">
+          <span>Amazon (AWS)</span>
+          <span>EY</span>
+          <span>Warner Music Group</span>
+          <span>Engineering Stores</span>
+        </div>
       </div>
-      <div class="stats__item reveal" style="--d:2">
-        <span class="stats__num" data-count="600" data-suffix="+">0</span>
-        <span class="stats__label">Lines merged to open source</span>
-      </div>
-      <div class="stats__item reveal" style="--d:3">
-        <span class="stats__num" data-count="2023">0</span>
-        <span class="stats__label">UofT Machine Intelligence</span>
-      </div>
-    </section>
-
-    <!-- AI highlight band -->
-    <section class="quote reveal" id="highlight">
-      <blockquote>
-        <p>Working expertise across the modern AI stack — the <span class="quote__hl">Model Context Protocol</span>, <span class="quote__hl">multi-agent orchestration</span>, and LLM application design — applied to production-grade systems.</p>
-        <footer>
-          <cite>Current focus</cite>
-          <span>Where backend reliability meets agentic AI</span>
-        </footer>
-      </blockquote>
     </section>
 
     <!-- Experience -->
@@ -233,35 +225,49 @@
       </div>
       <ol class="timeline">
         <li class="timeline__item reveal">
-          <div class="timeline__when">2024 — Present</div>
+          <div class="timeline__when">Jan 2024 — Present</div>
           <div class="timeline__what">
             <h3>Software Engineer II (L3)</h3>
             <p class="timeline__org">Warner Music Group</p>
-            <p>Promoted from SWE I within 16 months. Architected the greenfield cloud platform (Pulumi/AWS) for Video Management, shipped 20+ FastAPI endpoints, drove reliability (JWT caching, connection pooling, query indexing), and stood up monitoring with New Relic + GitHub Actions.</p>
+            <p class="timeline__lead">Promoted from Software Engineer I to II within 16 months.</p>
+            <ul>
+              <li>Architected and built the foundational cloud infrastructure (Pulumi, AWS RDS/ECS/Load Balancers) for a greenfield Video Management platform — one of the first projects at the company to adopt Pulumi, establishing the pattern for future teams.</li>
+              <li>Designed and implemented 20+ REST API endpoints using FastAPI; integrated with YouTube, external, and internal microservices.</li>
+              <li>Drove Video Claiming expansion to wholly-owned labels as part of a two-person squad; liaised directly with business and product stakeholders to align on requirements and drove the proof-of-concept to completion.</li>
+              <li>Implemented system-level reliability improvements, including JWT caching, DB connection pool pre-warming, query indexing, and a TTL cron job for log retention.</li>
+              <li>Took full ownership of the Video Claiming App during a team transition, maintaining a live production system while managing stakeholder communication and feature development planning.</li>
+              <li>Spearheaded browser monitoring setup using New Relic and GitHub Actions; built dashboards and alerting for the platform.</li>
+            </ul>
           </div>
         </li>
         <li class="timeline__item reveal">
-          <div class="timeline__when">2022</div>
+          <div class="timeline__when">May 2022 — Jul 2022</div>
           <div class="timeline__what">
-            <h3>SDE Intern</h3>
+            <h3>Software Developer Engineer Intern</h3>
             <p class="timeline__org">Amazon (AWS)</p>
-            <p>Redesigned the S3 Replication Manifest Generator, writing production Java with Mockito and Step Functions (YAML/JSON).</p>
+            <ul>
+              <li>Redesigned the S3 Replication Manifest Generator feature in AWS, writing high-quality production Java with Mockito and Step Functions (YAML/JSON).</li>
+            </ul>
           </div>
         </li>
         <li class="timeline__item reveal">
-          <div class="timeline__when">2021 — 2022</div>
-          <div class="timeline__what">
-            <h3>WebMaster</h3>
-            <p class="timeline__org">Engineering Stores</p>
-            <p>Built and migrated a full-stack e-commerce site with the Shopify Admin API, Django, PostgreSQL, and DigitalOcean — handling both data migration and hosting.</p>
-          </div>
-        </li>
-        <li class="timeline__item reveal">
-          <div class="timeline__when">2021</div>
+          <div class="timeline__when">May 2021 — Aug 2021</div>
           <div class="timeline__what">
             <h3>Technology Consultant Intern</h3>
             <p class="timeline__org">EY (Ernst &amp; Young)</p>
-            <p>Led client development workshops and built custom features on commercial insurance software (Guidewire); drove process efficiency through data analysis and stakeholder presentations.</p>
+            <ul>
+              <li>Led development workshops for clients and built custom features on commercial insurance software (Guidewire); drove process efficiency through data analysis and stakeholder presentations.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__when">Jun 2021 — Jul 2022</div>
+          <div class="timeline__what">
+            <h3>WebMaster</h3>
+            <p class="timeline__org">Engineering Stores</p>
+            <ul>
+              <li>Built and migrated a full-stack e-commerce site using Shopify Admin API, Django, PostgreSQL, and DigitalOcean — handling both data migration and hosting.</li>
+            </ul>
           </div>
         </li>
       </ol>
@@ -272,51 +278,28 @@
       <div class="about__content reveal">
         <p class="eyebrow">About</p>
         <h2 class="section-title">Engineering across the stack</h2>
-        <p>I'm Emily Traynor — a software engineer and University of Toronto Engineering Science graduate specializing in Machine Intelligence. I work across the stack, with the greatest depth in backend systems, cloud infrastructure, and applied AI.</p>
-        <p>At Warner Music Group I build and own production services end to end. I follow developments in AI closely — the Model Context Protocol, multi-agent orchestration, and LLM tooling — and focus on bringing them into systems that must stay reliable at scale. I'm looking to make my next move in San Francisco.</p>
+        <p>I'm a software engineer with a B.Eng in Engineering Science — Machine Intelligence from the University of Toronto (Sep 2019 – Apr 2023). I work across backend services, cloud infrastructure, and data systems, with a growing focus on applied AI. I'm currently a Software Engineer II at Warner Music Group and looking to make my next move in San Francisco.</p>
         <div class="about__cols">
-          <div>
-            <h4>Education</h4>
-            <p>B.Eng, Engineering Science — Machine Intelligence<br>University of Toronto · 2019–2023</p>
-          </div>
           <div>
             <h4>Languages &amp; Frameworks</h4>
             <p>Python (FastAPI, SQLAlchemy, Pydantic, Celery), JavaScript, Java</p>
           </div>
           <div>
-            <h4>Infrastructure &amp; Data</h4>
-            <p>Pulumi · AWS · Docker · CI/CD · PostgreSQL · Redis · New Relic</p>
+            <h4>Infrastructure &amp; DevOps</h4>
+            <p>Pulumi, AWS (RDS, ECS, Load Balancers), CI/CD (GitHub Actions), Docker, New Relic</p>
           </div>
           <div>
-            <h4>AI &amp; ML</h4>
-            <p>MCP · Multi-agent orchestration · PyTorch · TensorFlow · BERT · Pandas</p>
+            <h4>Data &amp; Systems</h4>
+            <p>Redis, PostgreSQL, REST API design, SQLAlchemy, Metabase</p>
+          </div>
+          <div>
+            <h4>ML &amp; Data Science</h4>
+            <p>PyTorch, TensorFlow, Pandas</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
-    <section class="contact" id="contact">
-      <p class="eyebrow eyebrow--light">Let's connect</p>
-      <h2 class="contact__title">Let's build something reliable.</h2>
-      <p class="contact__lede">Open to software engineering opportunities in San Francisco, and to interesting problems across backend, infrastructure, and applied AI.</p>
-      <form class="contact__form" id="contactForm" novalidate>
-        <div class="field">
-          <input type="text" id="cName" name="name" required placeholder=" " />
-          <label for="cName">Your name</label>
-        </div>
-        <div class="field">
-          <input type="email" id="cEmail" name="email" required placeholder=" " />
-          <label for="cEmail">Email</label>
-        </div>
-        <div class="field field--full">
-          <textarea id="cMsg" name="message" rows="3" required placeholder=" "></textarea>
-          <label for="cMsg">What's on your mind?</label>
-        </div>
-        <button type="submit" class="btn btn--primary btn--block">Send message <span aria-hidden="true">→</span></button>
-        <p class="contact__status" id="contactStatus" role="status" aria-live="polite"></p>
-      </form>
-    </section>
   </main>
 
   <footer class="footer">
