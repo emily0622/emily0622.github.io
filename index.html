@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Emily Traynor — Software Engineer</title>
-  <meta name="description" content="Emily Traynor is a software engineer in Vancouver building cloud-native backends and AI agent systems — Python, FastAPI, AWS, Pulumi, and the modern AI stack (MCP, multi-agent orchestration)." />
+  <meta name="description" content="Emily Traynor is a software engineer building cloud-native backends and AI agent systems — Python, FastAPI, AWS, Pulumi, and the modern AI stack (MCP, multi-agent orchestration). Open to roles in San Francisco." />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="apple-touch-icon" href="assets/favicon.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -42,42 +42,24 @@
       <div class="hero__grid">
         <div class="hero__text">
           <div class="hero__availability reveal">
-            <span class="pulse"></span> Software Engineer II · Warner Music Group · Vancouver, BC
+            <span class="pulse"></span> Open to Software Engineer roles — San Francisco
           </div>
           <h1 class="hero__title">
-            <span class="reveal" style="--d:1">Engineering reliable</span>
-            <span class="reveal" style="--d:2">systems — and the</span>
-            <span class="reveal hero__accent" style="--d:3">AI agents on top.</span>
+            <span class="reveal" style="--d:1">Emily Traynor</span>
           </h1>
-          <div class="hero__meta reveal" style="--d:4">
+          <p class="hero__role reveal" style="--d:2">Software Engineer — backend, cloud &amp; applied AI</p>
+          <div class="hero__meta reveal" style="--d:3">
             <p class="hero__lede">
               Software engineer with a machine-intelligence background, building cloud-native
-              backends in production — and fluent in the modern AI stack: MCP, multi-agent
-              orchestration, and LLM tooling.
+              backends in production, with working expertise across the modern AI stack:
+              the Model Context Protocol, multi-agent orchestration, and LLM tooling.
             </p>
             <a href="#work" class="btn btn--primary">View selected work <span aria-hidden="true">↓</span></a>
           </div>
         </div>
 
-        <!-- Code card -->
-        <div class="hero__code reveal" style="--d:3" aria-hidden="true">
-          <div class="hero__code-bar">
-            <span></span><span></span><span></span>
-            <em>orchestrator.py</em>
-          </div>
-          <pre><code><span class="c-k">from</span> mcp <span class="c-k">import</span> ClientSession
-<span class="c-k">from</span> agents <span class="c-k">import</span> Orchestrator, Agent
-
-orchestrator = Orchestrator(
-    model=<span class="c-s">"claude-opus-4-8"</span>,
-    tools=<span class="c-f">mcp</span>.discover(),
-)
-
-<span class="c-c"># fan out, verify, synthesize</span>
-result = <span class="c-k">await</span> orchestrator.run(
-    task=<span class="c-s">"ship it"</span>,
-    agents=[<span class="c-f">researcher</span>, <span class="c-f">builder</span>, <span class="c-f">critic</span>],
-)</code></pre>
+        <div class="hero__photo reveal" style="--d:2">
+          <img src="assets/emily.jpg" alt="Emily Traynor" />
         </div>
       </div>
 
@@ -110,8 +92,8 @@ result = <span class="c-k">await</span> orchestrator.run(
       <p class="eyebrow">Hello, I'm Emily</p>
       <p class="intro__statement">
         I build <em>reliable</em> software — production APIs, cloud infrastructure, and data
-        systems — and I'm <em>all-in</em> on the AI shift, shipping agentic tooling with the
-        Model Context Protocol and multi-agent orchestration.
+        systems — and increasingly the <em>applied-AI</em> layer on top: agentic tooling built on
+        the Model Context Protocol and multi-agent orchestration.
       </p>
     </section>
 
@@ -202,7 +184,7 @@ result = <span class="c-k">await</span> orchestrator.run(
         <div class="approach__col reveal approach__col--feature" style="--d:2">
           <span class="approach__num">03</span>
           <h3>AI &amp; Agents</h3>
-          <p>Where I'm investing now: bringing the modern AI stack into real systems — agents that use tools, coordinate, and ship.</p>
+          <p>A growing focus of my work: bringing the modern AI stack into production systems — agents that use tools, coordinate, and deliver reliably.</p>
           <ul>
             <li>Model Context Protocol (MCP)</li>
             <li>Multi-agent orchestration &amp; LLM apps</li>
@@ -235,7 +217,7 @@ result = <span class="c-k">await</span> orchestrator.run(
     <!-- AI highlight band -->
     <section class="quote reveal" id="highlight">
       <blockquote>
-        <p>Fluent in the modern AI stack — the <span class="quote__hl">Model Context Protocol</span>, <span class="quote__hl">multi-agent orchestration</span>, and LLM application design — and shipping it into production-grade systems.</p>
+        <p>Working expertise across the modern AI stack — the <span class="quote__hl">Model Context Protocol</span>, <span class="quote__hl">multi-agent orchestration</span>, and LLM application design — applied to production-grade systems.</p>
         <footer>
           <cite>Current focus</cite>
           <span>Where backend reliability meets agentic AI</span>
@@ -254,7 +236,7 @@ result = <span class="c-k">await</span> orchestrator.run(
           <div class="timeline__when">2024 — Present</div>
           <div class="timeline__what">
             <h3>Software Engineer II (L3)</h3>
-            <p class="timeline__org">Warner Music Group · Vancouver, BC</p>
+            <p class="timeline__org">Warner Music Group</p>
             <p>Promoted from SWE I within 16 months. Architected the greenfield cloud platform (Pulumi/AWS) for Video Management, shipped 20+ FastAPI endpoints, drove reliability (JWT caching, connection pooling, query indexing), and stood up monitoring with New Relic + GitHub Actions.</p>
           </div>
         </li>
@@ -262,7 +244,7 @@ result = <span class="c-k">await</span> orchestrator.run(
           <div class="timeline__when">2022</div>
           <div class="timeline__what">
             <h3>SDE Intern</h3>
-            <p class="timeline__org">Amazon (AWS) · Vancouver, BC</p>
+            <p class="timeline__org">Amazon (AWS)</p>
             <p>Redesigned the S3 Replication Manifest Generator, writing production Java with Mockito and Step Functions (YAML/JSON).</p>
           </div>
         </li>
@@ -270,7 +252,7 @@ result = <span class="c-k">await</span> orchestrator.run(
           <div class="timeline__when">2021 — 2022</div>
           <div class="timeline__what">
             <h3>WebMaster</h3>
-            <p class="timeline__org">Engineering Stores · Toronto, ON</p>
+            <p class="timeline__org">Engineering Stores</p>
             <p>Built and migrated a full-stack e-commerce site with the Shopify Admin API, Django, PostgreSQL, and DigitalOcean — handling both data migration and hosting.</p>
           </div>
         </li>
@@ -278,7 +260,7 @@ result = <span class="c-k">await</span> orchestrator.run(
           <div class="timeline__when">2021</div>
           <div class="timeline__what">
             <h3>Technology Consultant Intern</h3>
-            <p class="timeline__org">EY (Ernst &amp; Young) · Toronto, ON</p>
+            <p class="timeline__org">EY (Ernst &amp; Young)</p>
             <p>Led client development workshops and built custom features on commercial insurance software (Guidewire); drove process efficiency through data analysis and stakeholder presentations.</p>
           </div>
         </li>
@@ -289,9 +271,9 @@ result = <span class="c-k">await</span> orchestrator.run(
     <section class="about" id="about">
       <div class="about__content reveal">
         <p class="eyebrow">About</p>
-        <h2 class="section-title">Building at the edge of AI</h2>
-        <p>I'm Emily Traynor — a software engineer based in Vancouver, BC, and a University of Toronto Engineering Science graduate specializing in Machine Intelligence. I work across the stack but I'm happiest deep in backend systems, cloud infrastructure, and now agentic AI.</p>
-        <p>At Warner Music Group I build and own production services end to end. Outside of work I follow the AI frontier closely — the Model Context Protocol, multi-agent orchestration, and LLM tooling — and bring what's new into systems that have to actually be reliable.</p>
+        <h2 class="section-title">Engineering across the stack</h2>
+        <p>I'm Emily Traynor — a software engineer and University of Toronto Engineering Science graduate specializing in Machine Intelligence. I work across the stack, with the greatest depth in backend systems, cloud infrastructure, and applied AI.</p>
+        <p>At Warner Music Group I build and own production services end to end. I follow developments in AI closely — the Model Context Protocol, multi-agent orchestration, and LLM tooling — and focus on bringing them into systems that must stay reliable at scale. I'm looking to make my next move in San Francisco.</p>
         <div class="about__cols">
           <div>
             <h4>Education</h4>
@@ -317,7 +299,7 @@ result = <span class="c-k">await</span> orchestrator.run(
     <section class="contact" id="contact">
       <p class="eyebrow eyebrow--light">Let's connect</p>
       <h2 class="contact__title">Let's build something reliable.</h2>
-      <p class="contact__lede">Open to interesting problems in backend, infrastructure, and applied AI. Reach out — I'd love to hear what you're working on.</p>
+      <p class="contact__lede">Open to software engineering opportunities in San Francisco, and to interesting problems across backend, infrastructure, and applied AI.</p>
       <form class="contact__form" id="contactForm" novalidate>
         <div class="field">
           <input type="text" id="cName" name="name" required placeholder=" " />
@@ -341,7 +323,7 @@ result = <span class="c-k">await</span> orchestrator.run(
     <div class="footer__inner">
       <div class="footer__brand">
         <span class="footer__logo">Emily Traynor<span class="nav__logo-dot">.</span></span>
-        <p>Software Engineer · Vancouver, BC</p>
+        <p>Software Engineer · Open to San Francisco</p>
       </div>
       <nav class="footer__links" aria-label="Footer">
         <a href="#work">Work</a>
