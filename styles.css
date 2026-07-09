@@ -407,7 +407,7 @@ img { max-width: 100%; display: block; }
 .about__content p { color: var(--ink-soft); margin-bottom: 1.2rem; max-width: 56ch; }
 .about__content .section-title { color: var(--ink); margin-bottom: 1.5rem; }
 .about__cols {
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem 2.5rem; margin-top: 3rem;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(185px, 1fr)); gap: 1.8rem 2.5rem; margin-top: 3rem;
   padding-top: 2.5rem; border-top: 1px solid var(--line);
 }
 .about__cols h4 {
